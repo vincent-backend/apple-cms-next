@@ -1,0 +1,12 @@
+{
+    "site": {
+      "title": "Mac CMS",
+      "base_url": "https://maccms.la/"
+    },
+  
+    "metadata": {
+      "meta_author": "aa",
+      "meta_image": "images/logo-big.png",
+      "meta_description": "maccms"
+    }
+  }
