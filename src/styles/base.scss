@@ -3,25 +3,25 @@ html {
 }
 
 body {
-  @apply text-[16px] bg-[#0F0F0F] font-primary font-normal leading-relaxed text-text overflow-x-hidden;
+  @apply text-[16px] bg-[#ffffff] font-primary font-normal leading-relaxed text-text overflow-x-hidden;
 }
 
 h1,
 h2,
 h3 {
-  @apply font-title leading-tight text-primary;
+  @apply leading-tight text-dark;
 }
 
 h1 {
-  @apply text-[50px] md:text-[140px] font-title;
+  @apply text-[40px] md:text-[76px] font-[600];
 }
 
 h2 {
-  @apply text-[40px] md:text-[110px] font-title;
+  @apply text-[40px] md:text-[110px];
 }
 
 h3 {
-  @apply text-[30px] sm:text-[45px] font-title text-cred;
+  @apply text-[30px] sm:text-[45px] text-dark;
 }
 
 h4 {
@@ -39,4 +39,8 @@ h6 {
 br {
   @apply block text-[100%] h-[1] md:h-[6px];
   content: "";
+}
+
+p {
+  @apply text-base text-text font-primary;
 }

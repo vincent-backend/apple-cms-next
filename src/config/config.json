@@ -1,12 +1,44 @@
 {
-    "site": {
-      "title": "Mac CMS",
-      "base_url": "https://maccms.la/"
-    },
-  
-    "metadata": {
-      "meta_author": "aa",
-      "meta_image": "images/logo-big.png",
-      "meta_description": "maccms"
-    }
+  "site": {
+    "title": "Apple CMS",
+    "base_url": "https://maccms.la/",
+    "favicon": "/favicon.ico",
+    "logo": "/logo.png",
+    "width": "50",
+    "height": "50",
+    "logo_mobile": "/images/logo-mobile.png",
+    "logo_text": "Apple CMS"
+  },
+
+  "params": {
+    "tag_manager_id": "",
+    "contact_form_action": "#",
+    "footer_content": "ss",
+    "copyright": "_"
+  },
+
+  "contact_info": {
+    "phone": "+",
+    "email": "_",
+    "location": ""
+  },
+
+  "nav_button": {
+    "enable": true,
+    "label_en": "EN",
+    "label_cn": "汉语",
+    "link": "/"
+  },
+
+  "metadata": {
+    "meta_author": "_",
+    "meta_image": "images/twitter-image.png",
+    "meta_description": "Welcome to Apple CMS!"
+  },
+
+  "disqus": {
+    "enable": true,
+    "shortname": "Apple CMS",
+    "settings": {}
   }
+}

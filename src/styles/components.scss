@@ -1,0 +1,55 @@
+.title_page {
+  @apply text-dark text-[27px] md:text-[40px];
+}
+
+// section style
+.section {
+  @apply py-16;
+}
+
+// container
+.container {
+  @apply mx-auto max-w-[1200px] px-5;
+}
+
+.banner-download {
+  @apply w-full md:w-[280px] h-[90px] md:h-[180px] md:hover:h-[210px] bg-cover bg-center bg-no-repeat flex flex-row md:flex-col justify-center items-center gap-5 transition-all duration-200 md:hover:bg-[#323643] md:bg-cover  hover:bg-[url('/images/home/md/card_bg_hover.svg')]  md:hover:bg-[url('/images/home/md/card_bg_hover.svg')]
+        rounded-[15px] md:rounded-[30px];
+  box-shadow: inset 0px -3px 0px 0px #D9E6E7;
+  border: 1px solid #D9E6E7;
+}
+
+.banner-download-icon-cover {
+  @apply w-[60px] h-[60px] rounded-full bg-[#323643] flex items-center justify-center  transition-all duration-200 group-hover:bg-white md:group-hover:absolute md:group-hover:top-[10px] md:group-hover:right-[10px];
+}
+
+.download-icon {
+  @apply w-[24px] h-[24px] bg-[url('/images/home/home_card_down.svg')] group-hover:bg-[url('/images/home/home_card_hover.svg')];
+}
+
+.download-text {
+  @apply w-[100px] text-dark text-[17px] md:text-[20px] group-hover:text-white md:group-hover:absolute md:group-hover:left-[24px] md:group-hover:bottom-[24px];
+}
+
+
+// form style
+.form-inputs * {
+  @apply mb-5 leading-10;
+}
+
+//footer
+.footer-copy-write {
+   a{
+    @apply underline;
+
+    &:hover  {
+      @apply hover:text-primary;
+    }
+   }
+}
+
+
+
+.div-rounded-blur {
+  @apply bg-white bg-opacity-5 backdrop-blur rounded-xl;
+}

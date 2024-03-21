@@ -1,0 +1,120 @@
+{
+  "main": [
+    {
+      "name": {
+        "en": "盗版检测",
+        "zh-CN": "盗版检测",
+        "zh": "盗版检测"
+      },
+      "url": "/check",
+      "hasChildren": false
+    },
+    {
+      "name": {
+        "en": "文档",
+        "zh-CN": "文档",
+        "zh": "文档"
+      },
+      "url": "/doc",
+      "hasChildren": false
+    },
+    {
+      "name": {
+        "en": "Telegram群",
+        "zh-CN": "Telegram群",
+        "zh": "Telegram群"
+      },
+      "url": "https://t.me/maccms_channel",
+      "target": "_blank"
+    }
+  ],
+  "footer": {
+    "telegram": [
+      {
+        "name": "AVAV Global Community",
+        "url": "https://t.me/avavglobal"
+      },
+      {
+        "name": "AVAV Chinese Community",
+        "url": "https://t.me/AVAV_official"
+      },
+      {
+        "name": "AVAV English Community",
+        "url": "https://t.me/AVAV_English"
+      },
+      {
+        "name": "AVAV Nigerian Community",
+        "url": "https://t.me/avavnigerian"
+      },
+      {
+        "name": "AVAV Turkey Community",
+        "url": "https://t.me/avavturkey"
+      },
+      {
+        "name": "AVAV Japan Community",
+        "url": "https://t.me/avavjapan"
+      },
+      {
+        "name": "AVAV Korea Community",
+        "url": "https://t.me/avavkorea"
+      },
+      {
+        "name": "AVAV Vietnam Community",
+        "url": "https://t.me/avav_vietnami"
+      }
+    ],
+    "twitter": [
+      {
+        "name": "AVAV Global Community",
+        "url": "https://x.com/avav_global"
+      },
+      {
+        "name": "AVAV Chinese Community",
+        "url": "https://x.com/avavcommunity"
+      }
+    ],
+    "more": [
+      {
+        "name": {
+          "en": "API Doc",
+          "zh-CN": "API文档",
+          "zh": "API文件",
+          "ja": "APIドキュメント",
+          "ko": "API 문서",
+          "vi": "Tài liệu API"
+        },
+        "url": "https://docs.avascriptions.com/developer-service/asc-20"
+      },
+      {
+        "name": {
+          "en": "Buy Tutorial",
+          "zh-CN": "购买教程",
+          "zh": "購買教學課程",
+          "ja": "チュートリアル",
+          "ko": "튜토리얼 구입",
+          "vi": "Hướng dẫn"
+        },
+        "url": "/tutorial"
+      }
+    ]
+  },
+  "home": {
+    "name": {
+      "en": "HOME",
+      "zh-CN": "主页",
+      "zh": "首頁"
+    },
+    "url": "/"
+  },
+  "language": {
+    "name": {
+      "en": "EN",
+      "zh-CN": "中文",
+      "zh": "繁体"
+    }
+  },
+  "languages": [
+    {"name": "中文", "code": "zh-CN"},
+    {"name": "繁体", "code": "zh"}
+  ]
+}

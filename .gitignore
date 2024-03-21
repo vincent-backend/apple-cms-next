@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+package-lock.json
 
 # testing
 /coverage
@@ -27,6 +28,8 @@ yarn-error.log*
 
 # local env files
 .env*.local
+*.env
+.env
 
 # vercel
 .vercel
@@ -34,3 +37,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+#contents
+/src/content/art_category.json
+#translate
+**/ko.md
+
+#images
+/public/images/art/category/

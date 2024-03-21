@@ -1,9 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: 'jit',
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/layouts/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/layouts/**/*.{js,ts,jsx,tsx,mdx}',
     './src/content/**/*.{md, mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     screens: {
@@ -14,19 +16,29 @@ module.exports = {
       "2xl": "1400px",
     },
     extend: {
+      fontSize: {
+        base: "14px",
+        h1: "130px",
+        h2: "50px",
+        h3: "40px",
+        h4: "30px",
+        h5: "20px"
+      },
       colors: {
-        primary: "#ffffff",
-        text: "#747272",
-        dark: "#747272",
-        cred: "#FD2C2F",
-        body: "#000000"
+        primary: "#40CC92",
+        text: "#4D5366",
+        dark: "#05031A",
+        body: "#FFFFFF",
+        footer: "#FAFAFA"
       },
       fontFamily: {
-        primary: ['var(--font-pingfang)'],
-        secondary: ['var(--font-alimama)', 'MS Gothic', 'Simsun'],
-        title: ['var(--font-title)', 'var(--font-pingfang)','MS Gothic', 'Simsun']
+        primary: ['var(--font-pingfang), Sans-Serif'],
       }
     },
   },
-  plugins: [],
-};
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("tailwind-bootstrap-grid")({ generateContainer: false }),
+  ],
+}
