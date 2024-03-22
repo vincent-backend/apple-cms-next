@@ -1,5 +1,5 @@
 html {
-  @apply text-base;
+  @apply text-base font-primary;
 }
 
 body {
@@ -9,7 +9,7 @@ body {
 h1,
 h2,
 h3 {
-  @apply leading-tight text-dark;
+  @apply leading-tight text-dark font-primary;
 }
 
 h1 {
@@ -17,23 +17,23 @@ h1 {
 }
 
 h2 {
-  @apply text-[40px] md:text-[110px];
+  @apply text-[20px] md:text-[30px] font-semibold;
 }
 
 h3 {
-  @apply text-[30px] sm:text-[45px] text-dark;
+  @apply text-[17px] md:text-[20px] text-dark font-semibold;
 }
 
 h4 {
-  @apply text-[25px] md:text-h4 text-primary font-primary font-bold;
+  @apply text-[25px] md:text-h4 text-dark font-primary font-bold;
 }
 
 h5 {
-  @apply text-h5 font-primary text-primary;
+  @apply text-h5 font-primary text-dark;
 }
 
 h6 {
-  @apply text-[16px] md:text-[18px] font-primary text-primary;
+  @apply text-[16px] md:text-[18px] font-primary text-dark;
 }
 
 br {
@@ -41,6 +41,6 @@ br {
   content: "";
 }
 
-p {
+p, span {
   @apply text-base text-text font-primary;
 }

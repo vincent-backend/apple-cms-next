@@ -17,6 +17,7 @@ const Logo = ({ src, lang }) => {
           priority
           className={`min-w-[36px] min-h-[36px]`}
         />
+        <span className="ml-[10px] text-[17px] md:text-[24px] text-dark">{title}</span>
       </div>
     </Link>
   );
