@@ -29,7 +29,8 @@ module.exports = {
         text: "#4D5366",
         dark: "#05031A",
         body: "#FFFFFF",
-        footer: "#FAFAFA"
+        footer: "#FAFAFA",
+        danger: "#F22F43"
       },
       fontFamily: {
         primary: ['var(--font-pingfang), Sans-Serif'],

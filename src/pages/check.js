@@ -26,6 +26,10 @@ export default function Check({ data }) {
   let { banner } = frontmatter;
   const { general } = config;
 
+  /// state
+  const [isModalShow, setModalShow] = useState(false);
+  const [checkState, setCheckState] = useState('detect');
+
   useEffect(() => {
     //frontmatter
     setFrontmatter(data.filter((dt) => dt.lang === locale)[0]);
@@ -93,7 +97,7 @@ export default function Check({ data }) {
                 </svg>
               </div>
               <input className="input" type="search" placeholder="http://baidu.com"></input>
-              <buttton className="button">检测</buttton>
+              <buttton onClick={()=>setModalShow(true)} className="button">检测</buttton>
             </div>
           </div>
         </div>
@@ -104,6 +108,35 @@ export default function Check({ data }) {
           <Advertise />
         </div>
       </section>
+      <div className={clsx("modal", !isModalShow && "hidden")}>
+        <div className="modal-container">
+          <div className="modal-header">
+            <button onClick={() => setModalShow(false)}>
+              <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <title>Close</title>
+                <g id="页面-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                  <g id="盗版检测_正在检测_1" transform="translate(-1101.000000, -385.000000)" className="stroke-[#C3C5CC] hover:stroke-[#b3b5bC]" stroke-width="2">
+                    <g id="pop" transform="translate(775.000000, 365.000000)">
+                      <g id="popup_del" transform="translate(324.186292, 18.686292)">
+                        <g id="编组-2" transform="translate(13.313708, 13.313708) rotate(-315.000000) translate(-13.313708, -13.313708) translate(3.899495, 3.899495)">
+                          <line x1="-3.63797881e-12" y1="9.41421356" x2="18.8284271" y2="9.41421356" id="路径-3"></line>
+                          <line x1="9.41421356" y1="3.63797881e-12" x2="9.41421356" y2="18.8284271" id="路径-3"></line>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </button>
+          </div>
+          <div className="modal-inner">
+            <Image src="/images/check/check-detection.svg" width={110} height={110} className={clsx(checkState=="fail" && "hidden")}/>
+            <Image src="/images/check/check-detection-lose.svg" width={110} height={110} className={clsx(checkState !="fail" && "hidden")}/>
+            <p className={clsx("text-4 text-dark", checkState=="fail" && "text-danger" )}>正在检测请勿关闭窗口…</p>
+            <p className="text-base text-center">本功能纯前端页面检测，没有请求任何接口！<br/>可以抓包查证,保证数据安全不会泄露域名！<br/>如果检测失败请多次尝试！</p>
+          </div>
+        </div>
+      </div>
     </Base>
   );
 }

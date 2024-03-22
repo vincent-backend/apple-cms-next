@@ -32,10 +32,10 @@ const Footer = () => {
             <div className="h-[14px] min-w-[2px] bg-[#D9E6E7]" />
             <Link href="https://www.maccms.plus/" target="_blank" className="footer-link">苹果cms在线手册</Link>
           </div>
-          <div className="relative flex flex-row items-center justify-center gap-1 w-full md:w-[200px]">
+          <Link href="https://www.51.la/?from=maccms" target="_blank" className="relative flex flex-row items-center justify-center gap-1 w-full md:w-[200px]">
             <Image alt="5.1-logo" src="/images/home/51-la.png" width={74} height={74} />
             <span>提供CDN赞助</span>
-          </div>
+          </Link>
         </div>
         <div className="w-full justify-center flex flex-col items-center my-[20px] md:my-[60px] gap-4">
           <p>© 2020 #5CMS or MACCMS MIT license</p>

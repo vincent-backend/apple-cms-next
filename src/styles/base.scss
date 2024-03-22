@@ -41,6 +41,6 @@ br {
   content: "";
 }
 
-p, span {
-  @apply text-base text-text font-primary;
+p, span, a {
+  @apply text-base text-text font-primary leading-tight;
 }
